@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculo total carrito</title>
+    <!--FONTAWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="../styles.css" />
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container p-3">
+      <div class="row">
+        <div class="col-3">
+          <a href="../index.html">
+            <img
+              src="https://maap.cc/_next/static/media/brandLogo.6f652e57.svg"
+              alt="brand-logo"
+            />
+          </a>
+        </div>
+        <nav class="col-6 d-flex justify-content-around text-center">
+          <li>
+            <button type="button" class="p-2 btn btn-secondary">
+              <a href="newSeason.html" class="active">NEW SEASON</a>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="p-2 btn btn-secondary">
+              <a href="accessories.html">ACCESSORIES</a>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="p-2 btn btn-secondary">
+              <a href="man.html">MAN</a>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="p-2 btn btn-secondary">
+              <a href="woman.html">WOMAN</a>
+            </button>
+          </li>
+        </nav>
+        <div class="col-3 text-center">
+          <button
+            class="btn btn-secondary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasTop"
+            aria-controls="offcanvasTop"
+          >
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+        </div>
+        <div
+          class="offcanvas offcanvas-top"
+          tabindex="-1"
+          id="offcanvasTop"
+          aria-labelledby="offcanvasTopLabel"
+          data-bs-scroll="true"
+          data-bs-backdrop="true"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel">
+              Shooping Cart
+            </h5>
+            <button onclick="cart()" class="btn btn-outline-secondary">
+              ADD PRODUCTS TO MY SHOPPING CART
+            </button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <h5>USE THE CODE: "SPECIAL20MAAP"</h5>
+            <p>To apply the 20% discount to your order</p>
+            <small>*(Only available for orders over $250AUD)</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid gallery">
+      <div class="container-fluid gallery">
+        <div class="row">
+          <div class="p-0 col-sm-6 col-md-2">
+            <img
+              src="../images/img-NS/NS1.webp"
+              class="img-fluid"
+              alt="evade pro base ls jersey brown detail"
+            />
+          </div>
+          <div class="p-0 col-sm-6 col-md-2">
+            <img
+              src="../images/img-NS/NS2.webp"
+              class="img-fluid"
+              alt="evade pro base ls jersey brown product"
+            />
+          </div>
+          <div class="p-0 col-sm-6 col-md-2">
+            <img
+              src="../images/img-NS/NS3.webp"
+              class="img-fluid"
+              alt="evade pro base ls jersey brown"
+            />
+          </div>
+          <div class="p-0 col-sm-6 col-md-2">
+            <img
+              src="../images/img-NS/NS4.webp"
+              class="img-fluid"
+              alt="evade pro base ls jersey purple"
+            />
+          </div>
+          <div class="p-0 col-sm-6 col-md-2">
+            <img
+              src="../images/img-NS/NS5.webp"
+              class="img-fluid"
+              alt="evade pro base jersey 2.0 black"
+            />
+          </div>
+          <div class="p-0 col-sm-6 col-md-2">
+            <img
+              src="../images/img-NS/NS6.webp"
+              class="img-fluid"
+              alt="woman evade pro base jersey 2.0 purple"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="p-0 col-sm-6 col-md-2">
+            <img
+              src="../images/img-NS/NS7.webp"
+              class="img-fluid"
+              alt="woman evade pro base jersey 2.0 blue"
+            />
+          </div>
+          <div class="p-0 col-sm-6 col-md-2">
+            <img
+              src="../images/img-NS/NS8.webp"
+              class="img-fluid"
+              alt="evade pro base jersey 2.0 white"
+            />
+          </div>
+          <div class="p-0 col-sm-6 col-md-2">
+            <img
+              src="../images/img-NS/NS9.webp"
+              class="img-fluid"
+              alt="woman team bib evo purple"
+            />
+          </div>
+          <div class="p-0 col-sm-6 col-md-2">
+            <img
+              src="../images/img-NS/NS10.webp"
+              class="img-fluid"
+              alt="woman team bib evo brown"
+            />
+          </div>
+          <div class="p-0 col-sm-6 col-md-2">
+            <img
+              src="../images/img-NS/NS11.webp"
+              class="img-fluid"
+              alt="team bib evo purple"
+            />
+          </div>
+          <div class="p-0 col-sm-6 col-md-2">
+            <img
+              src="../images/img-NS/NS12.webp"
+              class="img-fluid"
+              alt="team bib evo pink"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../index.js"></script>
+    <!--BOOTSTRAP-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
