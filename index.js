@@ -11,7 +11,7 @@ function cart() {
   //Cycle to add products until "TOTAL" command indicates to calculate the cart total amount
   while (command != "TOTAL") {
     command = prompt(
-      "Enter a product to your cart\n- Or enter TOTAL to know the total ammount"
+      'Enter a product to your cart\n- Or enter "TOTAL" to know the total ammount'
     );
 
     //Switch with all product cases to be introduced
