@@ -3,7 +3,7 @@ let command;
 //General function
 function cart() {
   alert(
-    "Enter the products you want to add to your caart: \n\n- Add the name of the product EXACTLY as displayed in the web.\n - Once you have added all the products you want to buy, enter 'TOTAL' to know the total ammount of your purchase."
+    'Enter the products you want to add to your caart: \n\n- Add the name of the product EXACTLY as displayed in the web.\n - Once you have added all the products you want to buy, enter "TOTAL" to know the total ammount of your purchase.'
   );
 
   let list = "";
@@ -82,12 +82,12 @@ function cart() {
         alert(command + " added to cart");
         total += 375;
         break;
-      case "Women's Evade Pro Base":
+      case "Women's Evade Pro Base Jersey 2.0":
         list += "-" + command + " (245 $AUD)\n";
         alert(command + " added to cart");
         total += 245;
         break;
-      case "Women's Evolve 3D Pro Air":
+      case "Women's Evolve 3D Pro Air Jersey":
         list += "-" + command + " (225 $AUD)\n";
         alert(command + " added to cart");
         total += 225;
